@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>mObywatel — mock</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <img src="assets/logo.png" class="app_logo" alt="logo">
+      <h1>mObywatel</h1>
+    </header>
+
+    <main class="container">
+      <section class="controls">
+        <h2>Wprowadź dane</h2>
+        <div class="form">
+          <input id="name" placeholder="Imię" />
+          <input id="surname" placeholder="Nazwisko" />
+          <select id="gender">
+            <option value="M">Mężczyzna</option>
+            <option value="K">Kobieta</option>
+          </select>
+          <input id="birth" placeholder="Data urodzenia (YYYY-MM-DD)" />
+          <input id="pesel" placeholder="PESEL" />
+          <label class="file_label">Wgraj zdjęcie
+            <input id="upload" type="file" accept="image/*">
+          </label>
+          <button id="apply" class="btn">Generuj dowód</button>
+        </div>
+      </section>
+
+      <section class="preview">
+        <div class="id_card" id="idCard">
+          <div class="id_front">
+            <div class="hologram"></div>
+            <div class="card_head">
+              <img src="assets/state_emblem.png" class="emblem" alt="">
+              <div class="doc_title">RZECZPOSPOLITA POLSKA<br><span>Dowód osobisty</span></div>
+            </div>
+
+            <div class="card_body">
+              <div class="photo_wrap">
+                <img id="photo" class="photo" src="assets/photo_placeholder.png" alt="photo">
+              </div>
+
+              <div class="data">
+                <div class="line"><span class="label">Imię:</span> <span id="out_name" class="value">—</span></div>
+                <div class="line"><span class="label">Nazwisko:</span> <span id="out_surname" class="value">—</span></div>
+                <div class="line"><span class="label">PESEL:</span> <span id="out_pesel" class="value">—</span></div>
+                <div class="line"><span class="label">Urodz.:</span> <span id="out_birth" class="value">—</span></div>
+                <div class="line"><span class="label">Płeć:</span> <span id="out_gender" class="value">—</span></div>
+              </div>
+            </div>
+
+            <div class="card_footer">
+              <canvas id="qr" width="110" height="110" title="QR kod - mock"></canvas>
+              <div class="micro_text">mObywatel 4.0 — mock</div>
+            </div>
+
+            <div class="watermark">MOBYWATEL</div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="download" class="btn alt">Pobierz PNG (widok)</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="note">
+      <small>To jest wersja demonstracyjna — nie używać w celach oficjalnych.</small>
+    </footer>
+  </div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
