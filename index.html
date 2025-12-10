@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mObywatel</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+  <div class="splash">
+    <img src="assets/logo.png" class="logo"/>
+    <p class="title">mObywatel 4.0</p>
+  </div>
+
+  <div class="screen hidden" id="menu">
+    <h2>Wybierz dokument</h2>
+    <div class="doc-card" id="openId">
+      <img src="assets/id_icon.png"/>
+      <p>Dowód osobisty</p>
+    </div>
+  </div>
+
+  <div class="screen hidden" id="idcard">
+    <h2>Dowód osobisty</h2>
+    <img id="userPhoto" class="photo"/>
+    <p id="userName">Imię Nazwisko</p>
+    <p id="userPesel">00000000000</p>
+    <button id="back">Powrót</button>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
