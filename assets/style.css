@@ -1,6 +1,0 @@
-body{margin:0;font-family:Arial;background:#f2f2f2}
-.splash{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
-.hidden{display:none}
-.screen{padding:20px}
-.doc-card{background:white;border-radius:12px;padding:20px;margin-top:20px;display:flex;align-items:center;gap:15px}
-.photo{width:130px;height:160px;background:#ccc;border-radius:8px;object-fit:cover}
